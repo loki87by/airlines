@@ -1,0 +1,236 @@
+.Ticket {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.Tickets__container {
+  width: calc(100% - 190px);
+  border-right: 1px solid #dde3ee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Ticket__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Ticket__content:nth-of-type(2) {
+  border-top: 1px dashed #5c87db;
+}
+
+.Ticket__logo {
+  width: 17%;
+  max-width: 132px;
+  height: 100%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Ticket__title {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 6px 23px;
+  margin: 0;
+  margin-bottom: 28px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #8ba5d8;
+}
+
+.Ticket__img {
+  width: 39px;
+  max-width: 33%;
+  height: 39px;
+  max-height: 33%;
+  margin-bottom: 8px;
+}
+
+.Ticket__info {
+  width: calc(100% - 132px);
+  max-width: 83%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 20px 27px 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.Ticket__data {
+  width: 100%;
+  margin: 32px 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Ticket__inform {
+  width: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.Ticket__path {
+  width: 40%;
+  max-width: 270px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.Ticket__path-line {
+  position: relative;
+  width: 100%;
+  height: 28px;
+  background-image: url("../../assets/scheme.svg");
+  background-size: cover;
+}
+
+.Ticket__path-text {
+  position: absolute;
+  top: -4px;
+  width: 28px;
+  height: 20px;
+}
+
+.Ticket__path-time {
+  position: relative;
+  top: auto;
+  width: 100%;
+  text-align: center;
+  margin: 8px auto;
+}
+
+.Ticket__path-input {
+  left: -10px;
+}
+
+.Ticket__path-output {
+  right: -4px;
+}
+
+.Ticket__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Ticket__button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 7px 7px 3px;
+  margin-right: 20px;
+  border: 1px solid #b7bac1;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #232323;
+}
+
+.Ticket__button_active {
+  padding: 10px 18px 9px 15px;
+  border-radius: 10px;
+  border: none;
+  color: #5c5c5c;
+  background-color: #dde3ee;
+}

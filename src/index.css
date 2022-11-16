@@ -1,0 +1,58 @@
+@import "./normalize.css";
+@import "./fonts/stylesheet.css";
+
+body {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 71px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+h1 {
+  width: 20%;
+  max-width: 190px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #232323;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232323;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5c5c5c;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b7bac1;
+  color: #5c5c5c;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
