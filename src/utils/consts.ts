@@ -1,3 +1,5 @@
+import { TranslitTable } from "./types";
+
 export const DATE_ERROR =
   "По техническим причинам, в данный момент, путешествия во времени не осуществляются, но наши ученые делают все возможное в попытках исправить это досадное недоразумение. Приносим извинения за неудобства.";
 export const ADRESS_ERROR =
@@ -5,6 +7,92 @@ export const ADRESS_ERROR =
 export const TIME_STEP = 13.11438;
 export const MONEY_STEP = 473.258068;
 export const TIMES = ["09:20", "10:20", "11:20"];
+
+const converter = {
+  а: "a",
+  б: "b",
+  в: "v",
+  г: "g",
+  д: "d",
+  е: "e",
+  ё: "e",
+  ж: "zh",
+  з: "z",
+  и: "i",
+  й: "y",
+  к: "k",
+  л: "l",
+  м: "m",
+  н: "n",
+  о: "o",
+  п: "p",
+  р: "r",
+  с: "s",
+  т: "t",
+  у: "u",
+  ф: "f",
+  х: "h",
+  ц: "c",
+  ч: "ch",
+  ш: "sh",
+  щ: "sch",
+  ь: "",
+  ы: "y",
+  ъ: "",
+  э: "e",
+  ю: "yu",
+  я: "ya",
+
+  А: "A",
+  Б: "B",
+  В: "V",
+  Г: "G",
+  Д: "D",
+  Е: "E",
+  Ё: "E",
+  Ж: "Zh",
+  З: "Z",
+  И: "I",
+  Й: "Y",
+  К: "K",
+  Л: "L",
+  М: "M",
+  Н: "N",
+  О: "O",
+  П: "P",
+  Р: "R",
+  С: "S",
+  Т: "T",
+  У: "U",
+  Ф: "F",
+  Х: "H",
+  Ц: "C",
+  Ч: "Ch",
+  Ш: "Sh",
+  Щ: "Sch",
+  Ь: "",
+  Ы: "Y",
+  Ъ: "",
+  Э: "E",
+  Ю: "Yu",
+  Я: "Ya",
+};
+
+export const translit = (word: string): string => {
+  let answer = "";
+
+  for (let i = 0; i < word.length; i++) {
+    const current = (converter as TranslitTable)[word[i]];
+
+    if (current === undefined) {
+      answer += word[i];
+    } else {
+      answer += current;
+    }
+  }
+
+  return answer;
+};
 
 export const MINS_TO_HOURS = (time: number, words: boolean): string => {
   let str;

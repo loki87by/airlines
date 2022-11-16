@@ -1,7 +1,7 @@
 {
-  "name": "airlines-tickets",
+  "name": "airlines",
   "version": "0.0.1",
-  "homepage": "https://loki87by.github.io/airlines-tickets/",
+  "homepage": "https://loki87by.github.io/airlines/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

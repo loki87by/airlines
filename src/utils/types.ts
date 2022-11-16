@@ -5,6 +5,10 @@ export interface Coordinates {
   lon: number;
 }
 
+export interface TranslitTable {
+  [key: string]: string;
+}
+
 export interface ApiObject {
   [key: string]: string | number | Coordinates;
 }
